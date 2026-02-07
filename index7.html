@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Tech Repair - IT Solutions</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+    /* --- CUSTOM BRAND COLORS --- */
+    :root {
+        /* This defines your specific shade of green */
+        --brand-green: #28a745; 
+        --brand-green-dark: #1e7e34;
+    }
+
+    /* 1. Override the Primary Button (The "Book Service" button) */
+    .btn-primary {
+        background-color: var(--brand-green) !important;
+        border-color: var(--brand-green) !important;
+    }
+
+    /* Darker green when you hover over the button */
+    .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+        background-color: var(--brand-green-dark) !important;
+        border-color: var(--brand-green-dark) !important;
+    }
+
+    /* 2. Change the Service Icons (Laptop, Shield, Network icons) */
+    .service-icon {
+        color: var(--brand-green) !important;
+        font-size: 2.5rem;
+    }
+
+    /* 3. Make the Wrench Icon in the Logo Green */
+    .navbar-brand i {
+        color: var(--brand-green);
+    }
+
+    /* --- LAYOUT STYLES (Keep these from before) --- */
+    .hero-section {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?tech,office');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+    }
+    .feature-box {
+        transition: transform 0.3s;
+    }
+    .feature-box:hover {
+        transform: translateY(-5px);
+    }
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-wrench-adjustable"></i> Thomas Tech Repair
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-2" href="#contact">Get a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Professional IT Consulting & Repair</h1>
+            <p class="lead mb-4">Fast, reliable support for businesses and individuals. We fix it right the first time.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#contact" class="btn btn-primary btn-lg">Book Service</a>
+                <a href="#services" class="btn btn-outline-light btn-lg">View Services</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="text-muted">Comprehensive tech solutions for your business.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-box p-3">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop service-icon mb-3"></i>
+                            <h5 class="card-title">Hardware Repair</h5>
+                            <p class="card-text text-muted">Screen replacements, battery upgrades, and component fixes for all major brands.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-box p-3">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check service-icon mb-3"></i>
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text text-muted">Protect your data with enterprise-grade firewalls, antivirus, and audits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm feature-box p-3">
+                        <div class="card-body text-center">
+                            <i class="bi bi-hdd-network service-icon mb-3"></i>
+                            <h5 class="card-title">Network Setup</h5>
+                            <p class="card-text text-muted">Complete office network installation, server management, and cloud migration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-3">Ready to upgrade your IT?</h2>
+            <p class="mb-4">Contact us today for a free consultation.</p>
+            <a href="mailto:questions@thomastechrepair.com" class="btn btn-light btn-lg">Email Us</a>
+            
+            <div class="mt-5 text-muted small">
+                &copy; 2026 Thomas Tech Repair.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* --- THOMAS TECH REPAIR BRAND VARIABLES --- */
+:root {
+    --brand-green: #28a745; 
+    --brand-green-dark: #1e7e34;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f8f9fa;
+}
+
+/* --- GLOBAL SETTINGS --- */
+body { 
+    padding-top: 70px; /* Prevents fixed navbar from covering content */
+    scroll-behavior: smooth; 
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+/* --- NAVIGATION --- */
+.navbar { 
+    background-color: var(--dark-bg) !important; 
+    border-bottom: 3px solid var(--brand-green); 
+    padding: 0.8rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar-brand i { 
+    color: var(--brand-green); 
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: var(--brand-green) !important;
+}
+
+/* --- BUTTONS --- */
+.btn-brand { 
+    background-color: var(--brand-green); 
+    color: white; 
+    border: none; 
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover { 
+    background-color: var(--brand-green-dark); 
+    color: white; 
+    transform: translateY(-2px);
+}
+
+.btn-dark.rounded-pill:hover {
+    background-color: var(--brand-green);
+    border-color: var(--brand-green);
+}
+
+/* --- SPLIT SECTION LAYOUT --- */
+.image-side {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; /* Ensures image visibility on mobile */
+}
+
+/* Centers content vertically and horizontally */
+.content-side {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 5rem 3rem;
+}
+
+.inner-content { 
+    max-width: 550px; 
+    width: 100%;
+}
+
+.text-brand { 
+    color: var(--brand-green); 
+}
+
+/* --- SERVICES & ICONS --- */
+.service-icon { 
+    font-size: 3.5rem; 
+    color: var(--brand-green); 
+    margin-bottom: 1.5rem; 
+}
+
+.list-unstyled li {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+/* --- CARDS & UTILITIES --- */
+.card.shadow-sm {
+    border-left: 5px solid var(--brand-green);
+}
+
+/* --- FOOTER --- */
+footer {
+    border-top: 1px solid #333;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 991.98px) {
+    .content-side {
+        padding: 4rem 1.5rem;
+        text-align: center;
+    }
+    
+    .inner-content {
+        text-align: center !important; /* Forces centered text on mobile */
+    }
+    
+    .list-unstyled.text-start {
+        text-align: center !important;
+    }
+
+    .image-side {
+        min-height: 350px;
+    }
+}
