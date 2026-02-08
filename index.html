@@ -79,7 +79,7 @@
         <div class="row g-0">
             <div class="col-lg-6 content-side bg-light">
                 <div class="inner-content">
-                    <h1 class="display-3 fw-bold mb-4">Fast. Reliable. <span style="color: var(--brand-green);">Professional.</span></h1>
+                    <h1 class="display-3 fw-bold mb-4">Expert IT Support in<span style="color: var(--brand-green);">Orland Park and Chicago Land Area.</span></h1>
                     <p class="lead mb-4">Your local experts for hardware repair, network security, and custom IT consulting. We make Technology easy.</p>
                     <a href="#contact" class="btn btn-dark btn-lg px-5 rounded-pill">Book Now</a>
                 </div>
@@ -132,21 +132,21 @@
                     <div class="card border-0 shadow-sm p-4 bg-white">
                         <p class="mb-2"><strong>Email:</strong> <a href="mailto:questions@thomastechrepair.com" class="text-success">questions@thomastechrepair.com</a></p>
                         <p class="mb-0"><strong>Location:</strong> Orland Park, Illinois</p>
-                        <form
-                        action="https://formspree.io/f/xnjbqggk"
-                        method="POST"
-                        ><br>
-                        <label>
-                            Your email:<br>
-                            <input type="email" name="email">
-                        </label><br>
-                        <label>
-                            Your message:<br>
-                            <textarea name="message"></textarea><br>
-                        </label>
-                        <!-- your other form fields go here --><br>
-                        <button type="submit">Send</button>
-                        </form>
+                       <form action="https://formspree.io/f/xnjbqggk" method="POST">
+                        <div class="mb-3 text-start">
+                        <label for="email" class="form-label">Your Email Address</label>
+                        <input type="email" name="email" class="form-control" id="email" required>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="message" class="form-label">How can we help?</label>
+                            <textarea name="message" class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+
+                        <input type="hidden" name="_gotcha" style="display:none !important">
+
+                        <button type="submit" class="btn btn-brand w-100 py-2">Send Message</button>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -161,5 +161,46 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ComputerRepair", "ProfessionalService"],
+  "name": "Thomas Tech Repair",
+  "image": "https://www.thomastechrepair.com/images/logo.png",
+  "@id": "https://www.thomastechrepair.com",
+  "url": "https://www.thomastechrepair.com",
+  "telephone": "+1-708-462-2820",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Orland Park",
+    "addressRegion": "IL",
+    "postalCode": "60462",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Orland Park",
+    "Tinley Park",
+    "Homer Glen",
+    "Palos Park",
+    "Mokena",
+    "Chicago",
+    "Cicero",
+    "Oakbrook",
+    "Lockport"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/ThomasTechnologyRepair"
+  ]
+}
+</script>
 </body>
 </html>
