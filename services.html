@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Consulting and IT Team Training for businesses in Orland Park and Chicago. We upskill your internal IT staff and provide Tier 3 escalation support.">
+    <meta property="og:title" content="Thomas Tech | Business IT Services & Consulting">
+    <meta property="og:description" content="Strategic IT Consulting and Team Training for Chicago businesses.">
+    <meta property="og:image" content="https://www.thomastechrepair.com/images/social-preview.jpg">
+    <title>IT Consulting & Training | Thomas Tech Repair</title>
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --brand-green: #28a745; 
+            --brand-green-dark: #1e7e34;
+        }
+
+        body { padding-top: 70px; } 
+
+        /* Navbar (Identical to Index) */
+        .navbar { background-color: #1a1a1a !important; border-bottom: 3px solid var(--brand-green); }
+        .navbar-brand i { color: var(--brand-green); }
+        .btn-brand { background-color: var(--brand-green); color: white; border: none; }
+        .btn-brand:hover { background-color: var(--brand-green-dark); color: white; }
+
+        /* Hero Section */
+        .page-header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        /* Service Cards */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--brand-green);
+        }
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(40, 167, 69, 0.1);
+            color: var(--brand-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Training Section */
+        .bg-dark-section {
+            background-color: #212529;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-wrench-adjustable"></i> THOMAS TECHNOLOGY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link btn btn-brand px-4 ms-lg-3" href="index.html#contact">Get Quote</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <a href="https://www.facebook.com/ThomasTechnologyRepair" target="_blank" class="btn btn-outline-light ms-2">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Business IT Solutions</h1>
+            <p class="lead text-light opacity-75">Strategic Consulting and Team Development for the Modern Small to Medium Business.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card service-card p-4 border-0 shadow-sm">
+                        <div class="icon-box"><i class="bi bi-lightbulb"></i></div>
+                        <h3 class="h4 fw-bold mb-3">Strategic Consulting</h3>
+                        <p class="text-muted">We act as your Fractional CIO/CTO. From infrastructure planning to vendor management, we align your technology stack with your business goals.</p>
+                        <ul class="list-unstyled mt-3 small text-secondary">
+                            <li><i class="bi bi-check2 text-success me-2"></i>Infrastructure Audits</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Disaster Recovery Planning</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Budget Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card service-card p-4 border-0 shadow-sm">
+                        <div class="icon-box"><i class="bi bi-shield-check"></i></div>
+                        <h3 class="h4 fw-bold mb-3">IT Team Training</h3>
+                        <p class="text-muted">We are experts in aligning Amazing Customer Service with Excellent Technical Results.</p>
+                        <ul class="list-unstyled mt-3 small text-secondary">
+                            <li><i class="bi bi-check2 text-success me-2"></i>Customer Service Training</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Difficult Situations and Negotiations</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Increase CSAT and Internal KPIs with one effort</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card service-card p-4 border-0 shadow-sm">
+                        <div class="icon-box"><i class="bi bi-layers-half"></i></div>
+                        <h3 class="h4 fw-bold mb-3">Tier 3 Escalation</h3>
+                        <p class="text-muted">Stuck on a complex server issue? We provide high-level engineering support to resolve critical failures that go beyond standard helpdesk capabilities.</p>
+                        <ul class="list-unstyled mt-3 small text-secondary">
+                            <li><i class="bi bi-check2 text-success me-2"></i>Server Migration</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Network Architecture</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Cloud Configurations (Azure/AWS)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Empowering Your Internal IT Teams</h2>
+                    <p class="lead text-secondary mb-4">Don't replace your team—elevate them. We offer specialized training and "Co-Managed" partnerships to help your existing staff grow.</p>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <i class="bi bi-person-video3 fs-2 text-success"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Consultant Training</h5>
+                            <p class="text-secondary small">Hands-on workshops for Tier 1 & 2 technicians. We teach troubleshooting methodologies, customer service soft skills, and advanced ticket documentation.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="bi bi-diagram-3 fs-2 text-success"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Workflow Optimization</h5>
+                            <p class="text-secondary small">We review your team's SOPs and tools. We help implement better ticketing systems, documentation standards, and escalation policies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1000" alt="IT Team Training" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center py-4">
+            <h2 class="fw-bold mb-3">Ready to upgrade your IT strategy?</h2>
+            <p class="lead text-muted mb-4">Schedule a free consultation to discuss your infrastructure or team training needs.</p>
+            <a href="index.html#contact" class="btn btn-brand btn-lg px-5 rounded-pill">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container small text-secondary">
+            &copy; 2026 Thomas Tech Repair. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.thomastechrepair.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://www.thomastechrepair.com/services.html"
+      }]
+    }
+    </script>
+</body>
+</html>
