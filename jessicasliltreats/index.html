@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jessica's Lil Treats - Professional custom baking. Cupcakes, cakes, cakepops, chocolate covered strawberries, and more.">
+    <meta property="og:title" content="Jessica's Lil Treats | Custom Baked Goods">
+    <meta property="og:description" content="Delicious custom treats baked with 25 years of professional experience.">
+    <meta property="og:url" content="https://thomastechrepair.com/jessicasliltreats/">
+    <link rel="canonical" href="https://thomastechrepair.com/jessicasliltreats/">
+    
+    <title>Jessica's Lil Treats | Custom Baked Goods</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            /* Theme Colors: Light Purple, Black, and Red */
+            --brand-purple: #cda4dd; /* Light Purple */
+            --brand-purple-dark: #b37bc7; /* Slightly darker for hover states */
+            --brand-red: #ff4d4d; /* Hint of Red */
+            --brand-black: #1a1a1a;
+        }
+
+        body { padding-top: 70px; scroll-behavior: smooth; } 
+
+        /* Navbar Customization */
+        .navbar { background-color: var(--brand-black) !important; border-bottom: 3px solid var(--brand-purple); }
+        .navbar-brand i { color: var(--brand-purple); }
+        .navbar-brand { color: white !important; }
+        
+        /* Buttons */
+        .btn-brand { background-color: var(--brand-purple); color: black; border: none; font-weight: 600; }
+        .btn-brand:hover { background-color: var(--brand-purple-dark); color: white; }
+        .btn-outline-brand { border: 2px solid var(--brand-purple); color: var(--brand-purple); }
+        .btn-outline-brand:hover { background-color: var(--brand-purple); color: black; }
+        
+        .text-accent { color: var(--brand-red) !important; }
+
+        /* Split Section Logic */
+        .split-section { min-height: 85vh; display: flex; align-items: center; }
+        
+        .image-side {
+            background-size: cover;
+            background-position: center;
+            min-height: 450px;
+        }
+
+        .content-side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .inner-content { max-width: 550px; }
+        .service-icon { font-size: 3rem; color: var(--brand-red); margin-bottom: 1rem; } /* Hint of red on icons */
+        
+        /* Custom Checkmarks */
+        .bi-heart-fill { color: var(--brand-purple); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-cake2-fill"></i> JESSICA'S LIL TREATS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link btn btn-brand px-4 ms-lg-3 text-dark" href="#contact">Order Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Jessica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <a href="#" target="_blank" class="btn btn-outline-light ms-2">
+                    <i class="bi bi-instagram"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 content-side bg-light">
+                <div class="inner-content">
+                    <h1 class="display-3 fw-bold mb-4"><span style="color: var(--brand-purple-dark);">Handcrafted Sweets</span> for Every Occasion.</h1>
+                    <p class="lead mb-4">From elegant cupcakes to chocolate-covered treats, we bring 25 years of professional baking expertise right to your table.</p>
+                    <a href="#services" class="btn btn-dark btn-lg px-5 rounded-pill me-2">View Menu</a>
+                    <a href="#contact" class="btn btn-brand btn-lg px-5 rounded-pill">Place Order</a>
+                </div>
+            </div>
+            <div class="col-lg-6 image-side" style="background-image: url('http://googleusercontent.com/image_generation_content/6'); border-left: 4px solid var(--brand-red);"></div>
+        </div>
+    </header>
+
+    <section id="services" class="container-fluid p-0">
+        <div class="row g-0 flex-row-reverse">
+            <div class="col-lg-6 content-side" style="background-color: var(--brand-black); color: white;">
+                <div class="inner-content">
+                    <i class="bi bi-shop service-icon"></i>
+                    <h2 class="display-5 fw-bold mb-4">Our Sweet Menu</h2>
+                    <p class="text-light opacity-75 mb-4">Whether you are planning a wedding, a birthday party, or just need to satisfy a sweet tooth, we have a custom treat for you.</p>
+                    <ul class="list-unstyled text-start mx-auto d-inline-block fs-5">
+                        <li class="mb-2"><i class="bi bi-heart-fill me-3"></i> Custom Cakes & Cupcakes</li>
+                        <li class="mb-2"><i class="bi bi-heart-fill me-3"></i> Decorated Cakepops</li>
+                        <li class="mb-2"><i class="bi bi-heart-fill me-3"></i> Chocolate Covered Pretzels</li>
+                        <li class="mb-2"><i class="bi bi-heart-fill me-3"></i> Chocolate Covered Strawberries</li>
+                        <li class="mb-2"><i class="bi bi-heart-fill me-3"></i> Freshly Baked Cookies</li>
+                        <li class="mb-2"><i class="bi bi-heart-fill me-3 text-accent"></i> <em>And much more!</em></li>
+                    </ul>
+                    
+                    <div class="mt-4 d-flex flex-wrap gap-2 justify-content-center">
+                        <a href="#contact" class="btn btn-brand btn-lg px-4 rounded-pill">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 image-side" style="background-image: url('https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=1000');"></div>
+        </div>
+    </section>
+
+    <section id="about" class="container-fluid p-0 border-top border-dark border-3">
+        <div class="row g-0">
+            <div class="col-lg-6 content-side bg-light">
+                <div class="inner-content">
+                    <i class="bi bi-stars service-icon"></i>
+                    <h2 class="display-5 fw-bold mb-4">Meet Jessica</h2>
+                    <p class="text-muted lead">25 Years of Passion and Perfection.</p>
+                    <p class="text-muted">Baking isn't just a hobby—it's a lifelong profession. Jessica has spent the last two and a half decades mastering the art of desserts, perfecting recipes that look just as incredible as they taste.</p>
+                    <p class="text-muted">From delicate chocolate drizzles on a fresh strawberry to the perfect crumb on a custom birthday cake, every item from <strong>Jessica's Lil Treats</strong> is made with high-quality ingredients, an eye for detail, and a whole lot of love.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 image-side" style="background-image: url('https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&q=80&w=1000');"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="container-fluid p-0">
+        <div class="row g-0 flex-row-reverse">
+            <div class="col-lg-6 content-side bg-dark text-white">
+                <div class="inner-content">
+                    <i class="bi bi-envelope-fill service-icon text-accent"></i>
+                    <h2 class="display-5 fw-bold mb-4">Let's Bake Something Special</h2>
+                    <p class="mb-4 text-light opacity-75">Have an upcoming event or craving something specific? Send us a message with your ideas and we'll get back to you with pricing and availability.</p>
+                    
+                    <div class="card border-0 shadow-sm p-4 text-dark" style="background-color: #f8f9fa;">
+                        <p class="mb-2"><strong>Email:</strong> <a href="mailto:orders@jessicasliltreats.com" style="color: var(--brand-purple-dark);">orders@jessicasliltreats.com</a></p>
+                        <p class="mb-0"><strong>Location:</strong> Orland Park, Illinois</p>
+                        
+                        <form action="#" method="POST" class="mt-4">
+                            <div class="mb-3 text-start">
+                                <label for="email" class="form-label fw-bold">Your Email Address</label>
+                                <input type="email" name="email" class="form-control border-secondary" id="email" required>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                                <label for="message" class="form-label fw-bold">What would you like to order?</label>
+                                <textarea name="message" class="form-control border-secondary" id="message" rows="4" placeholder="e.g., I need 2 dozen chocolate covered strawberries for next Saturday..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-brand w-100 py-2">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 image-side" style="background-image: url('https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&q=80&w=1000');"></div>
+        </div>
+    </section>
+
+    <footer class="text-white py-4 text-center" style="background-color: var(--brand-black); border-top: 3px solid var(--brand-purple);">
+        <div class="container small text-secondary">
+            &copy; 2026 Jessica's Lil Treats. All rights reserved.<br>
+            <span class="text-muted">A proudly hosted partner of Thomas Tech Repair</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Jessica's Lil Treats",
+      "image": "http://googleusercontent.com/image_generation_content/6",
+      "@id": "https://thomastechrepair.com/jessicasliltreats",
+      "url": "https://thomastechrepair.com/jessicasliltreats",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Orland Park",
+        "addressRegion": "IL",
+        "postalCode": "60462",
+        "addressCountry": "US"
+      },
+      "description": "Professional custom baking including cakes, cupcakes, cakepops, and chocolate covered treats.",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+</body>
+</html>
